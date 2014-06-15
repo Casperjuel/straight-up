@@ -1,0 +1,9 @@
+app
+bin
+lib
+spec
+test
+bower.json
+Gemfile
+*.gemspec
+Rakefile
