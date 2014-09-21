@@ -1,11 +1,12 @@
-/* Neat 1.7.0.pre
- * http://neat.bourbon.io
- * Copyright 2012-2014 thoughtbot, inc.
+/* Straight Up v0.1.0
+ * kennethormandy.com/journal/straight-up-neat-grids-without-bourbon
+ * Copyright © 2012–2014 thoughtbot, inc
+ * Copyright © 2014 Kenneth Ormandy
  * MIT License
  */
 
 // Helpers
-@import "neat-helpers";
+@import "straight-up-helpers";
 
 // Grid
 @import "grid/private";
@@ -22,3 +23,6 @@
 @import "grid/visual-grid";
 @import "grid/display";
 @import "grid/direction";
+
+// Addons & other mixins
+@import "addons/clearfix";

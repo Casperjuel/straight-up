@@ -69,7 +69,7 @@
  *   // Context is reset to block display
  */
 @mixin reset-display {
-  $container-display-table: false !global;
+  $container-display-table: false !default;
   @include -neat-warn("Resetting $display will be deprecated in future versions in favor of the display(){...} mixin.");
 }
 
@@ -86,7 +86,7 @@
  *   // Context is reset to left-to-right
  */
 @mixin reset-layout-direction {
-  $layout-direction: $default-layout-direction !global;
+  $layout-direction: $default-layout-direction !default;
   @include -neat-warn("Resetting $direction will be deprecated in future versions in favor of the direction(){...} mixin.");
 }
 

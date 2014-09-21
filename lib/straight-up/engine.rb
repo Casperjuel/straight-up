@@ -1,4 +1,4 @@
-module Neat
+module StraightUp
   class Engine < Rails::Engine
     # auto wire
   end

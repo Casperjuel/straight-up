@@ -1,0 +1,40 @@
+{
+  "name": "straight-up",
+  "repo": "kennethormandy/straight-up",
+  "description": "A lightweight, fluid grid framework: Neat without Bourbon.",
+  "version": "0.1.0",
+  "keywords": ["scss", "sass", "grid", "neat"],
+  "dependencies": {
+    "harp/bourbon": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "files": [
+    "dist/_neat-helpers.scss",
+    "dist/_neat.scss",
+    "dist/addons/_clearfix.scss",
+    "dist/functions/_new-breakpoint.scss",
+    "dist/functions/_private.scss",
+    "dist/functions/_modular-scale.scss",
+    "dist/functions/_golden-ratio.scss",
+    "dist/grid/_fill-parent.scss",
+    "dist/grid/_box-sizing.scss",
+    "dist/grid/_direction.scss",
+    "dist/grid/_display.scss",
+    "dist/grid/_fill-parent.scss",
+    "dist/grid/_media.scss",
+    "dist/grid/_omega.scss",
+    "dist/grid/_outer-container.scss",
+    "dist/grid/_pad.scss",
+    "dist/grid/_private.scss",
+    "dist/grid/_reset.scss",
+    "dist/grid/_row.scss",
+    "dist/grid/_shift.scss",
+    "dist/grid/_span-columns.scss",
+    "dist/grid/_to-deprecate.scss",
+    "dist/grid/_visual-grid.scss",
+    "dist/settings/_disable-warnings.scss",
+    "dist/settings/_grid.scss",
+    "dist/settings/_visual-grid.scss"
+  ]
+}

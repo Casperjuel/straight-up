@@ -1,6 +1,6 @@
 require "fileutils"
 
-module Neat
+module StraightUp
   class Generator
     def initialize(arguments)
       @subcommand = arguments.first
@@ -20,7 +20,7 @@ module Neat
       if neat_files_already_exist?
         remove_neat_directory
         install_files
-        puts "Neat files updated."
+        puts "Straight Up files updated."
       else
         puts "No existing neat installation. Doing nothing."
       end
@@ -28,17 +28,17 @@ module Neat
 
     def install
       if neat_files_already_exist?
-        puts "Neat files already installed, doing nothing."
+        puts "Straight Up files already installed, doing nothing."
       else
         install_files
-        puts "Neat files installed to neat/"
+        puts "Straight Up files installed to neat/"
       end
     end
 
     def remove
       if neat_files_already_exist?
         remove_neat_directory
-        puts "Neat was successfully removed."
+        puts "Straight Up was successfully removed."
       else
         puts "No existing neat installation. Doing nothing."
       end

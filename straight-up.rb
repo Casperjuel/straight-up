@@ -1,10 +1,9 @@
-require "bourbon"
-require "neat/generator"
+require "straight-up/generator"
 
-module Neat
+module StraightUp
   if defined?(Rails) && defined?(Rails::Engine)
     class Engine < ::Rails::Engine
-      require 'neat/engine'
+      require 'straight-up/engine'
     end
 
     module Rails

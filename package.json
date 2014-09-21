@@ -1,16 +1,27 @@
 {
-  "name": "neat",
-  "version": "1.5.1",
-  "description": "A semantic, fluid grid framework on top of Sass and Bourbon",
-  "main": "dist/_neat.scss",
-  "author": "thoughtbot",
-  "repository": "git://github.com/kennethormandy/neat.git",
+  "name": "straight-up",
+  "version": "0.1.0",
+  "description": "A lightweight, fluid grid framework: Neat without Bourbon.",
+  "homepage": "http://kennethormandy.com/journal/straight-up-neat-grids-without-bourbon",
+  "main": "dist/_straight-up.scss",
+  "author": {
+    "name": "Kenneth Ormandy",
+    "email": "hello@kennethormandy.com",
+    "website": "http://kennethormandy.com",
+    "twitter": "kennethormandy",
+    "github": "kennethormandy"
+  },
+  "repository": "git://github.com/kennethormandy/straight.git",
   "license": "MIT",
-  "keywords": [ "scss", "css", "mixins", "grid", "bourbon" ],
+  "keywords": [
+    "scss",
+    "css",
+    "mixins",
+    "grid",
+    "neat",
+    "autoprefixer"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/kennethormandy/neat/issues"
   }
 }

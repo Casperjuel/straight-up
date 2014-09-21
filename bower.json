@@ -1,8 +1,8 @@
 {
-  "name": "neat",
-  "version": "1.7.0.pre",
-  "homepage": "http://neat.bourbon.io/",
-  "main": "app/assets/stylesheets/_neat.scss",
+  "name": "straight",
+  "version": "0.1.0",
+  "homepage": "http://kennethormandy.com/journal/straight-up-neat-grids-without-bourbon",
+  "main": "dist/_straight-up.scss",
   "ignore": [
     "bin",
     "lib",
@@ -15,8 +15,5 @@
     "NEWS.md",
     "test",
     "spec"
-  ],
-  "dependencies": {
-    "bourbon": ">=4.0"
-  }
+  ]
 }

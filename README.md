@@ -1,130 +1,61 @@
+<!--
 [![Neat](http://neat.bourbon.io/images/logotype.svg)](http://neat.bourbon.io)
 
-[![Gem Version](http://img.shields.io/gem/v/neat.svg?style=flat)](https://rubygems.org/gems/neat) [![Travis](http://img.shields.io/travis/thoughtbot/neat.svg?style=flat)](https://travis-ci.org/thoughtbot/neat)
-[![Code Climate](http://img.shields.io/codeclimate/github/thoughtbot/neat.svg?style=flat)](https://codeclimate.com/github/thoughtbot/neat)
-[![IRC](http://img.shields.io/badge/freenode-%23bourbon--neat-ae3dd2.svg?style=flat)](#)
-[![Stack Overflow](http://img.shields.io/badge/stack%20overflow-neat-ae3dd2.svg?style=flat)](http://stackoverflow.com/questions/tagged/neat)
+[![Travis](http://img.shields.io/travis/kennethormandy/straight-up.svg?style=flat)](https://travis-ci.org/kennethormandy/straight-up)
+[![Code Climate](http://img.shields.io/codeclimate/github/kennethormandy/straight-up.svg?style=flat)](https://codeclimate.com/github/kennethormandy/straight-up)
 
 ***
+-->
 
-## A lightweight, semantic grid framework built on top of Bourbon
+# Straight Up
 
-Neat is a fluid grid framework built on [Bourbon](http://bourbon.io) with the aim of being easy enough to use out of the box and flexible enough to customize down the road.
+[Neat](http://neat.bourbon.io) without [Bourbon](http://bourbon.io), ready for [Autoprefixer](https://github.com/postcss/autoprefixer).
 
-#### [Documentation & Demo](http://neat.bourbon.io)
+Straight Up is a fluid grid framework built on with the aim of being easy enough to use out of the box and flexible enough to customise down the road.
 
-#### [Changelog](https://github.com/thoughtbot/neat/releases)
+- Read the introductory blog post
+- Check out a demo
+- See [the original documentation for Neat](http://neat.bourbon.io)
 
 ## Requirements
 
-- [Sass](https://github.com/sass/sass) 3.3+
-- [Bourbon](https://github.com/thoughtbot/bourbon) 3.1+
-- :warning: If you are using Neat with **LibSass**, **sass-rails**, **Compass**, **Foundation** or need **Sass 3.2 support**, you should [use Neat 1.5.1](#installing-older-versions-of-neat).
+Straight’s only dependency is [Sass](https://github.com/sass/sass) 3.2+, which means [Libsass](https://github.com/sass/libsass) is (and will continue to be) supported. [Autoprefixer](https://github.com/postcss/autoprefixer) is not required but recommended.
 
-## Installation
+## Getting Started
 
-Neat uses the [RubyGems](https://rubygems.org) package manager to easily generate a `neat` directory with all of the necessary files.
+Download Straight Up or install it with the package manager of your choice.
 
-1. Install the Neat gem:
+#### With npm
 
-  ```bash
-  gem install neat
-  ```
-
-2. Install or update Neat’s dependencies:
-
-  ```bash
-  gem install sass # or gem update sass
-  ```
-  ```bash
-  gem install bourbon # or gem update bourbon
-  ```
-
-3. Install the Neat library into the current directory:
-
-  ```bash
-  bourbon install # if not already installed
-  ```
-  ```bash
-  neat install
-  ```
-
-4. Import Neat in your stylesheet, after Bourbon:
-
-  ```scss
-  @import "bourbon/bourbon";
-  @import "neat/neat";
-  ```
-
-  It’s not recommended to add or modify the Neat files so that you can update them easily.
-
-## Installation for Ruby on Rails
-
-1. Add Neat to your Gemfile:
-
-  ```ruby
-  gem 'neat'
-  ```
-
-2. Then run:
-
-  ```bash
-  bundle install
-  ```
-
-  If you see the error `Bundler could not find compatible versions for gem "sass"`, run:
-
-  ```bash
-  bundle update sass
-  ```
-
-3. Import Neat in your `application.css.scss`, after Bourbon:
-
-  ```scss
-  @import "bourbon";
-  @import "neat";
-  ```
-
-## Installing older versions of Neat
-
-1. Uninstall any Neat gem versions you already have:
-
-  ```bash
-  gem uninstall neat
-  ```
-
-2. Reinstall the Neat gem, using the `-v` flag to specify the version you need:
-
-  ```bash
-  gem install neat -v 1.5.1
-  ```
-
-3. Follow the [instructions above](#installation) to install Neat into your project.
-
-## Command line interface
-
-```bash
-neat install
-neat update
-neat remove
+```sh
+npm install --save-dev kennethormandy/straight
 ```
 
-More information can be found in the [wiki](https://github.com/thoughtbot/neat/wiki/Command-Line-Interface).
+#### With Component
 
-## Using Neat
+```sh
+component install kennethormandy/straight
+```
 
-First off, if you are planning to override the default grid settings (12 columns), it is recommended to create a `_grid-settings.scss` file for that purpose. Make sure to import it right *before* importing Neat:
+#### With Bower
+
+```sh
+bower install straight
+```
+
+## Using Straight Up
+
+First off, if you are planning to override the default grid settings (12 columns), it is recommended to create a `_grid-settings.scss` file for that purpose. Make sure to import it right *before* importing Straight Up:
 
 ```scss
-@import "bourbon/bourbon"; // or "bourbon" when in Rails
 @import "grid-settings";
-@import "neat/neat"; // or "neat" when in Rails
+@import "straight-up/straight-up";
 ```
 
-In your newly created  `_grid-settings.scss`, import `neat-helpers` if you are planning to use `new-breakpoint()`, then define your new variables:
+In your newly created  `_grid-settings.scss`, import `straight-up-helpers` if you are planning to use `new-breakpoint()`, then define your new variables:
 
 ```scss
-@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
+@import "straight-up/straight-up-helpers";
 
 // Change the grid settings
 $column: 90px;
@@ -137,7 +68,7 @@ $tablet: new-breakpoint(max-width 768px 8);
 $mobile: new-breakpoint(max-width 480px 4);
 ```
 
-See the [docs](http://neat.bourbon.io/docs/#variables) for a full list of settings.
+See the [original docs](http://neat.bourbon.io/docs/#variables) for a full list of settings.
 
 Next, include the `outer-container` mixin in the topmost container (to which the `max-width` setting will be applied):
 
@@ -179,8 +110,11 @@ To make your layout responsive, use the `media()` mixin to modify both the grid 
     @include span-columns(2);
   }
 }
+```
 
-// Compiled CSS
+The compiled CSS will appear as follows:
+
+```css
 @media screen and (max-width: 480px) {
   .my-class {
     display: block;
@@ -196,7 +130,7 @@ To make your layout responsive, use the `media()` mixin to modify both the grid 
 
 By setting `$visual-grid` to `true`, you can display the base grid in the background (default) or as an overlay. You can even change the color and opacity of the grid-lines by overriding the default settings as detailed in the section below.
 
-The visual grid reflects the changes applied to the grid via the `new-breakpoint()` mixin, as long as the media contexts are defined *before* importing Neat.
+The visual grid reflects the changes applied to the grid via the `new-breakpoint()` mixin, as long as the media contexts are defined *before* importing Straight Up.
 
 ## FAQ
 
@@ -236,19 +170,18 @@ If, for some reason, you still think that `omega-reset` is the only way you want
 
 The visual grid is built using CSS gradients whose stops might contain decimal values depending on the default settings of your grid. In order to render the gradient, browsers round the pixel values since they can’t deal with pixel fractions.
 
-As a result the viusal grid might be few pixels off in some browsers. The result is also inconsistent across browsers. For best results, preview your website on Firefox as it renders closest to the expected outcome.
+As a result the visual grid might be few pixels off in some browsers. The result is also inconsistent across browsers. For best results, preview your website on Firefox as it renders closest to the expected outcome.
 
 At this point, writing an internal rounding mechanism is not high priority.
 
-#### Framework X has this feature that Neat seems to be missing. Can you add it?
+#### Framework X has this feature that Straight Up seems to be missing. Can you add it?
 
-Unless you [open a pull request](https://github.com/thoughtbot/neat/compare/), the answer is most likely going to be no. Neat is lightweight and simple compared to other grid frameworks, and strives to remain so. We have plans for adding new features in future versions of the framework, but these will be most likely to support new ways of working with layouts on the Web, not patches to existing ones.
+Unless you [open a pull request](https://github.com/kennethormandy/straight-up/compare/), the answer is most likely going to be no. Straight Up is lightweight and simple compared to other grid frameworks, and strives to remain so. We have plans for adding new features in future versions of the framework, but these will be most likely to support new ways of working with layouts on the Web, not patches to existing ones.
 
 ## Links
 
-- Add the docset to [Dash](http://kapeli.com/dash) 1.8+ (Preferences **>** Downloads **>** + *Add Docset Feed* **>** `http://neat.bourbon.io/docset/Neat.xml`)
-- Ask questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/neat). Don’t forget to tag them `bourbon` and `neat`.
-- Suggest features or file bugs in [Issues](https://github.com/thoughtbot/neat/issues).
+- Ask questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/neat). Don’t forget to tag them `neat` and `straight-up`.
+- Suggest features or file bugs in [Issues](https://github.com/kennethormandy/straight-up/issues).
 - Join `#bourbon-neat` on `irc.freenode.net`.
 
 ## Browser support
@@ -260,19 +193,14 @@ Unless you [open a pull request](https://github.com/thoughtbot/neat/compare/), t
 - Opera 9.5+
 - Safari 4.0+
 
-## The Bourbon family
-
-- [Bourbon](http://bourbon.io): A simple and lightweight mixin library for Sass
-- [Neat](http://neat.bourbon.io): A lightweight semantic grid framework for Sass and Bourbon
-- [Bitters](http://bitters.bourbon.io): Scaffold styles, variables and structure for Bourbon projects
-- [Refills](http://refills.bourbon.io): Prepackaged patterns and components, built on top of Bourbon, Bitters & Neat
-
-## Credits
-
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
-
-Neat is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Tweet your questions or suggestions to [@bourbonsass](https://twitter.com/bourbonsass) and while you’re at it follow us too.
+## License
 
 ## License
 
-Copyright © 2012–2014 [thoughtbot, inc](http://thoughtbot.com). Neat is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
+[The MIT License (MIT)](LICENSE.md)
+
+Copyright © 2012–2014 [thoughtbot, inc](http://thoughtbot.com)
+Copyright © 2014 [Kenneth Ormandy](http://kennethormandy.com)
+
+Straight Up is based upon Neat, which was maintained and funded by [thoughtbot, inc](http://thoughtbot.com).
+Straight Up was forked and is maintained by [Kenneth Ormandy](http://kennethormandy.com) at [Chloi Inc.](http://chloi.io).
