@@ -19,7 +19,7 @@ Straight Up is a fluid grid framework built on with the aim of being easy enough
 
 ## Requirements
 
-Straight’s only dependency is [Sass](https://github.com/sass/sass) 3.2+, which means [Libsass](https://github.com/sass/libsass) is (and will continue to be) supported. [Autoprefixer](https://github.com/postcss/autoprefixer) is not required but recommended.
+Straight Up’s only dependency is [Sass](https://github.com/sass/sass) 3.2+ or [Libsass](https://github.com/sass/libsass). [Autoprefixer](https://github.com/postcss/autoprefixer) is not required but recommended.
 
 ## Getting Started
 
@@ -28,19 +28,19 @@ Download Straight Up or install it with the package manager of your choice.
 #### With npm
 
 ```sh
-npm install --save-dev kennethormandy/straight
+npm install --save-dev kennethormandy/straight-up
 ```
 
 #### With Component
 
 ```sh
-component install kennethormandy/straight
+component install kennethormandy/straight-up
 ```
 
 #### With Bower
 
 ```sh
-bower install straight
+bower install straight-up
 ```
 
 ## Using Straight Up
@@ -199,8 +199,8 @@ Unless you [open a pull request](https://github.com/kennethormandy/straight-up/c
 
 [The MIT License (MIT)](LICENSE.md)
 
-Copyright © 2012–2014 [thoughtbot, inc](http://thoughtbot.com)
+Copyright © 2012–2014 [thoughtbot, inc](http://thoughtbot.com)<br/>
 Copyright © 2014 [Kenneth Ormandy](http://kennethormandy.com)
 
-Straight Up is based upon Neat, which was maintained and funded by [thoughtbot, inc](http://thoughtbot.com).
+Straight Up is based upon Neat, which was maintained and funded by [thoughtbot, inc](http://thoughtbot.com).<br/>
 Straight Up was forked and is maintained by [Kenneth Ormandy](http://kennethormandy.com) at [Chloi Inc.](http://chloi.io).
