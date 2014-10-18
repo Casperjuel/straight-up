@@ -195,8 +195,6 @@ Unless you [open a pull request](https://github.com/kennethormandy/straight-up/c
 
 ## License
 
-## License
-
 [The MIT License (MIT)](LICENSE.md)
 
 Copyright © 2012–2014 [thoughtbot, inc](http://thoughtbot.com)<br/>
