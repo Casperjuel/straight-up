@@ -1,8 +1,8 @@
 {
   "name": "straight-up",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A lightweight, fluid grid framework: Neat without Bourbon.",
-  "homepage": "http://kennethormandy.com/journal/straight-up-neat-grids-without-bourbon",
+  "homepage": "http://github.com/kennethormandy/straight-up",
   "main": "dist/_straight-up.scss",
   "author": {
     "name": "Kenneth Ormandy",

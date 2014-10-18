@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Kenneth Ormandy']
   s.email       = ['hello@kennethormandy.com']
-  s.homepage    = 'https://github.com/kennethormandy/straight'
+  s.homepage    = 'https://github.com/kennethormandy/straight-up'
   s.summary     = 'A lightweight, fluid grid framework: Neat without Bourbon.'
   s.license     = 'MIT'
   s.description = <<-DESC
