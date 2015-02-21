@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# coding: utf-8
 $:.push File.expand_path('../lib', __FILE__)
 require 'straight-up/version'
 
@@ -31,4 +31,5 @@ Straight Up is Neat without Bourbon: an open source grid framework with the aim 
   s.add_development_dependency('rdoc')
   s.add_development_dependency('bundler')
   s.add_development_dependency('rb-fsevent', '~> 0.9.1')
+  s.add_development_dependency('scss-lint', '~> 0.29.0')
 end

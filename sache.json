@@ -1,5 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "Straight Up",
   "description": "A lightweight, fluid grid framework: Neat without Bourbon.",
   "tags": ["neat", "grid", "layout", "columns", "semantic", "media-queries", "media", "queries", "autoprefixer"]
+=======
+  "name": "Neat",
+  "description": "A lightweight, semantic grid framework built with Bourbon",
+  "tags": ["bourbon", "columns", "grid", "layout", "media", "media-queries", "neat", "queries", "sass", "scss", "semantic"]
+>>>>>>> bff08df8fec78f1186428aaea49ab79f3a87b398
 }

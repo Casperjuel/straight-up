@@ -1,6 +1,6 @@
 {
   "name": "straight-up",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "http://kennethormandy.com/journal/straight-up-neat-grids-without-bourbon",
   "main": "dist/_straight-up.scss",
   "ignore": [
