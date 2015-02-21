@@ -1,13 +1,9 @@
 The MIT License (MIT)
 
-<<<<<<< HEAD:LICENSE.md
 The MIT License
 
-Copyright © 2012–2014 [thoughtbot, inc.](http://thoughtbot.com)
-Copyright © 2014 [Kenneth Ormandy](http://kennethormandy.com)
-=======
 Copyright © 2012–2015 [thoughtbot, inc.](http://thoughtbot.com)
->>>>>>> bff08df8fec78f1186428aaea49ab79f3a87b398:LICENSE.md
+Copyright © 2014–2015 [Kenneth Ormandy](http://kennethormandy.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal

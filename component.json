@@ -2,7 +2,7 @@
   "name": "straight-up",
   "repo": "kennethormandy/straight-up",
   "description": "A lightweight, fluid grid framework: Neat without Bourbon.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "keywords": ["scss", "sass", "grid", "neat"],
   "dependencies": {
   },
