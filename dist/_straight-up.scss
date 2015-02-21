@@ -1,7 +1,7 @@
-/* Straight Up v0.1.0
+/* Straight Up v0.1.4
  * kennethormandy.com/journal/straight-up-neat-grids-without-bourbon
  * Copyright © 2012–2014 thoughtbot, inc
- * Copyright © 2014 Kenneth Ormandy
+ * Copyright © 2015 Kenneth Ormandy
  * MIT License
  */
 
@@ -22,7 +22,7 @@
 @import "grid/to-deprecate";
 @import "grid/visual-grid";
 @import "grid/display";
-@import "grid/direction";
+@import "grid/direction-context";
 
 // Addons & other mixins
 @import "addons/clearfix";
