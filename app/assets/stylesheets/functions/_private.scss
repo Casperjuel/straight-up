@@ -45,11 +45,7 @@
 }
 
 @function container-shift($shift: $shift) {
-<<<<<<< HEAD
   $parent-columns: $grid-columns !default;
-=======
-  $parent-columns: $grid-columns !default !global;
->>>>>>> bff08df8fec78f1186428aaea49ab79f3a87b398
 
   @if length($shift) == 3 {
     $container-columns: nth($shift, 3);
