@@ -1,8 +1,10 @@
 {
   "name": "straight-up",
+  "description": "A lightweight, fluid grid framework: Neat without Bourbon.",
   "version": "0.1.4",
   "homepage": "http://kennethormandy.com/journal/straight-up-neat-grids-without-bourbon",
-  "main": "dist/_straight-up.scss",
+  "main": "app/assets/stylesheets/_straight-up.scss",
+  "license": "MIT",
   "ignore": [
     "bin",
     "lib",
@@ -10,7 +12,7 @@
     "Gemfile",
     "Gemfile.lock",
     "Rakefile",
-    "neat.gemspec",
+    "straight-up.gemspec",
     "CONTRIBUTING.md",
     "NEWS.md",
     "test",
